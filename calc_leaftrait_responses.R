@@ -1,6 +1,6 @@
 # Code for modelling idealized leaf trait responses to environmental changes as used in:
 # Temporal constraints on leaf-level trait plasticity for next-generation land surface models
-# Odé at al. (yr), Annals of Botany
+# Odé at al. (yr), in preparation
 
 # Load packages and libraries #
 install.packages("plantecophys")
