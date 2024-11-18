@@ -2,29 +2,6 @@
 # Temporal constraints on leaf-level trait plasticity for next-generation land surface models
 # Odé at al. (yr), in preparation
 
-# Load packages and libraries #
-install.packages("plantecophys")
-install.packages("rpmodel")
-install.packages("R.utils")
-install.packages("ggplot2")
-install.packages("tidyverse")
-install.packages("dplyr")
-install.packages("Rtools")
-install.packages("writexl")
-install.packages("patchwork")
-
-library(writexl)
-library(plantecophys)
-library(rpmodel)
-library(R.utils)
-library(ggplot2)
-library(dplyr)
-library(tidyr)
-library(patchwork)
-library(tidyr)
-library(dplyr)
-
-
 #### variable key ####
 
 # P-model variables:
