@@ -23,9 +23,15 @@
 #PPFD: photosynthetic photon flux density (µmol m-2·s-1)
 #GS: stomatal conductance to water vapour 
 
+# load libraries
+library(R.utils)
+library(plantecophys)
+library(ggplot2)
+library(tidyverse)
+
 # Load necessary functions using path to own working directory
-sourceDirectory("../functions", modifiedOnly = FALSE)
-source("../calc_optimal_vcmax.R")
+sourceDirectory("functions", modifiedOnly = FALSE)
+source("calc_optimal_vcmax.R")
 
 
 #### Part 1: framework scenarios ####
