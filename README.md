@@ -19,7 +19,7 @@ Model variables and abbreviations are provided in the model code.
 
 - Smith, N. G., Keenan, T. F., Colin Prentice, I., Wang, H., Wright, I. J., Niinemets, Ü., Crous, K. Y., Domingues, T. F., Guerrieri, R., Yoko Ishida, F., Kattge, J., Kruger, E. L., Maire, V., Rogers, A., Serbin, S. P., Tarvainen, L., Togashi, H. F., Townsend, P. A., Wang, M., … Zhou, S. X. (2019). Global photosynthetic capacity is optimized to the environment. In Ecology Letters (Vol. 22, Issue 3, pp. 506–517). Blackwell Publishing Ltd. https://doi.org/10.1111/ele.13210
 
-#### Current badge
+#### Current DOI badge
 [![DOI](https://zenodo.org/badge/888995695.svg)](https://doi.org/10.5281/zenodo.14191128)
 
 ### Contact
