@@ -103,7 +103,7 @@ ggplot(combined, aes(x=xaxis, y=yaxis, label=Step)) +
   geom_path(linetype='solid', linewidth=1.5) +
   theme_classic(base_size = 20) +
   xlab("gs/gsmax") + ylab("ci:ca/chi") +
-  ggtitle("Scenario title") +
+  ggtitle("Scenario CO2 increase") +
   geom_hline(yintercept=1, color='Blue', linewidth=1, linetype='dashed') +
   geom_vline(xintercept=0.25, color='Blue', linewidth=1, linetype='dashed') +
   ylim(0.90,1.2) + xlim(0.12,0.3) +
@@ -134,7 +134,7 @@ timelapse_dataframe<-ggplot(timelapse_dataframe, aes(x=Step, y=Normalized_value,
   geom_line(linewidth = 1, aes(group=Variable)) +
   geom_point(size=3)+
   theme_bw()+
-  ggtitle("Timelapse ")+
+  ggtitle("Timelapse CO2")+
   theme_classic(base_size = 15)
 
 print(timelapse_dataframe)
@@ -210,7 +210,7 @@ ggplot(combined, aes(x=xaxis, y=yaxis, label=Step)) +
   geom_path(linetype='solid', linewidth=1.5) +
   theme_classic(base_size = 20) +
   xlab("gs/gsmax") + ylab("ci:ca/chi") +
-  ggtitle("Scenario title") +
+  ggtitle("Scenario VPD increase") +
   geom_hline(yintercept=1, color='Blue', linewidth=1, linetype='dashed') +
   geom_vline(xintercept=0.25, color='Blue', linewidth=1, linetype='dashed') +
   ylim(0.90,1.2) + xlim(0.12,0.3) +
@@ -241,7 +241,7 @@ timelapse_dataframe<-ggplot(timelapse_dataframe, aes(x=Step, y=Normalized_value,
   geom_line(linewidth = 1, aes(group=Variable)) +
   geom_point(size=3)+
   theme_bw()+
-  ggtitle("Timelapse ")+
+  ggtitle("Timelapse VPD")+
   theme_classic(base_size = 15)
 
 print(timelapse_dataframe)
