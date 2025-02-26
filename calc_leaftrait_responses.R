@@ -120,11 +120,13 @@ combined <- combined %>%
   mutate(Ci_normalized = Ci / max(Ci, na.rm = TRUE))
 combined <- combined %>%
   mutate(Vcmax_normalized = Vcmax / max(Vcmax, na.rm = TRUE))
+combined <- combined %>%
+  mutate(chi_normalized = Chi / max(Chi, na.rm = TRUE))
 
 # Create the data frame with normalized values and pivot to correct format #
 timelapse_dataframe <- combined %>%
-  select(Step, GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized) %>%
-  pivot_longer(cols = c(GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized),
+  select(Step, GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized, chi_normalized) %>%
+  pivot_longer(cols = c(GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized, chi_normalized),
                names_to = "Variable",
                values_to = "Normalized_value") %>%
   mutate(Variable = sub("_normalized", "", Variable))
@@ -134,7 +136,7 @@ timelapse_dataframe<-ggplot(timelapse_dataframe, aes(x=Step, y=Normalized_value,
   geom_line(linewidth = 1, aes(group=Variable)) +
   geom_point(size=3)+
   theme_bw()+
-  ggtitle("Timelapse CO2")+
+  ggtitle("Timelapse CO2 scenario")+
   theme_classic(base_size = 15)
 
 print(timelapse_dataframe)
@@ -227,11 +229,13 @@ combined <- combined %>%
   mutate(Ci_normalized = Ci / max(Ci, na.rm = TRUE))
 combined <- combined %>%
   mutate(Vcmax_normalized = Vcmax / max(Vcmax, na.rm = TRUE))
+combined <- combined %>%
+  mutate(chi_normalized = Chi / max(Chi, na.rm = TRUE))
 
 # Create the data frame with normalized values and pivot to correct format #
 timelapse_dataframe <- combined %>%
-  select(Step, GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized) %>%
-  pivot_longer(cols = c(GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized),
+  select(Step, GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized, chi_normalized) %>%
+  pivot_longer(cols = c(GS_normalized, ALEAF_normalized, Ci_normalized, Vcmax_normalized, chi_normalized),
                names_to = "Variable",
                values_to = "Normalized_value") %>%
   mutate(Variable = sub("_normalized", "", Variable))
